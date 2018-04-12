@@ -2,7 +2,13 @@
 
 function choose_common_elements(collection_a, collection_b) {
 
-  //在这里写入代码
+  let re = [];
+  collection_a.forEach(element => {
+    if(collection_b.indexOf(element)>=0){
+      re.push(element);
+    }
+  });
+  return re;
 }
 
 module.exports = choose_common_elements;
